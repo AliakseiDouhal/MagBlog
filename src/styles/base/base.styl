@@ -1,0 +1,62 @@
+html
+  font-size 16px
+
+body
+  font-family HelveticaRegular
+  position relative
+
+body
+  background-color #ebebeb
+
+a
+  cursor pointer
+
+header
+  background-color white
+
+.button
+  font-weight: 400
+  border-width 0
+  text-align: center
+  text-transform uppercase
+  white-space: nowrap
+  vertical-align: middle
+  user-select: none
+  transition: background-color .4s ease-in-out, border-color .4s ease-in-out, box-shadow .4s ease-in-out, color .4s ease-in-out
+  cursor pointer
+
+.container
+  max-width 1055px
+  background-color white
+  margin auto
+  padding 0 30px
+
+@media screen and (min-width: 1100px)
+  .color-right
+    position absolute
+    top: 0
+    right calc((100% - 1055px)/2 - 13px)
+    background url("/img/color-vert.png") repeat-y
+    height 100%
+    width 13px
+
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      background: url(/img/color-vert.png)
+      background-position-y: -160px
+      height: 490px
+      width: 13px
+
+    &:after
+      content: ''
+      position absolute
+      bottom: 0
+      right 0
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 0 0 13px 13px
+      border-color: transparent transparent #ebebeb transparent
