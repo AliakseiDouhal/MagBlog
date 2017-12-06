@@ -41,11 +41,9 @@
     color black
     margin-bottom 15px
   p
-    font-size 0.825rem
+    font-size 0.875rem
     margin-bottom 25px
-  span
-    color: rgb(106, 102, 102)
-    font-size 1 rem
+
   a
     color: rgb(106, 102, 102)
 
@@ -65,6 +63,9 @@
 
 .news-footer
   padding-top 15px
+  span
+    color: rgb(106, 102, 102)
+    font-size 1 rem
 
 .comments
   padding-left 55px
@@ -77,3 +78,116 @@
     background url("/img/Layer 31.png")
     width 18px
     height 18px
+
+.related-articles
+  ul
+    margin  21px 0 30px 0
+    padding 0
+    display inline-block
+
+.related-articles-trap
+  max-width: 255px
+  margin-left -30px
+  @extend .trap
+
+.write-comment-trap,
+.comments-trap
+  margin-left -30px
+  @extend .trap
+  max-width 223px
+
+.list-articles
+  list-style none
+  width 50%
+  padding  19px 0 0 19px
+  position relative
+  color: rgb(73, 73, 73)
+  text-align left
+  font-size 0.8125rem
+  display: inline
+  float: left
+
+  &:before
+    content: ''
+    position absolute
+    top: 21px
+    left 0
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 6px 0 6px 8px
+    border-color: transparent transparent transparent #5261ac
+
+.comments-trap
+  margin-bottom: 24px
+
+.block-comments,
+.write-comment,
+.related-articles
+  max-width: 565px
+
+.write-comment form
+  padding-top 40px
+  padding-bottom 50px
+
+  label
+    text-align right
+
+  input
+    height: 35px
+    max-width 100%
+
+  .form-group
+      margin-bottom: 20px
+
+
+a.user
+  font-size: 1rem
+  color: rgb(82, 97, 172)
+  text-align: left
+  font-weight bold
+
+.user-info
+  display flex
+  justify-content space-between
+
+a.reply-link
+  font-size: 0.9rem
+  color: rgb(82, 97, 172)
+  float: right
+  &:before
+    position absolute
+    border-bottom solid #bfbfbf 1px
+    content ''
+    left: 0
+    bottom: 6px
+    width: 90%
+
+.comment
+  padding-top 26px
+  img
+    width 70px
+    height 70px
+
+  &--date
+    font-size: 13px
+    color: rgb(73, 73, 73)
+    text-align: right
+
+  &-detail
+    margin-left 20px
+    position relative
+    p
+      font-size: 0.8125rem
+      color: rgb(73, 73, 73)
+      margin: 7px 0 10px
+
+.button--submit
+  @extend .button
+  float right
+  background-color #f78f1d
+  color: white
+  width 100%
+  max-width: 137px
+  height: 35px
+  border-radius 5px
