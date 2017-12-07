@@ -43,17 +43,44 @@
     text-align center
     padding-top 5px
 
-  & div:nth-child(1)
-    background-color #ec098d
+  & a:nth-child(1)
+    background-color #ec098d !important
     @extend .category-child
 
-  & div:nth-child(2)
-    background-color #f78f1d
+  & a:nth-child(2)
+    background-color #f78f1d !important
     @extend .category-child
 
-  & div:nth-child(3)
-    background-color #00aedb
+  & a:nth-child(3)
+    background-color #00aedb !important
     @extend .category-child
+
+  .nav-link
+    border: none
+    border-top-left-radius: 0
+    border-top-right-radius: 0
+    position relative
+
+  .nav-tabs .nav-item
+    margin-bottom: 0
+
+  .nav-link
+     padding: 0
+
+  .nav-link.active
+    border none
+    color: white
+
+    &:before
+      content: ""
+      position: absolute
+      bottom: -8px
+      left: calc(50% - 6.5px)
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 8px 6.5px 0 6.5px
+      border-color: black transparent transparent transparent
 
 .category-article
   min-height 100px

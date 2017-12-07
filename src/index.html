@@ -8,16 +8,16 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md flex-row">
+        <nav class="navbar navbar-expand-lg flex-row">
             <a class="navbar-brand " href="/">
                 <img src="img/logo.png" class="img-fluid" alt="Responsive image">
             </a>
 
-            <form class="form-inline m-auto ">
+            <form class="form-inline d-none d-sm-flex d-md-flex d-xl-flex d-lg-flex m-auto d-sm-none d-md-flex">
                 <input class="form-control " type="text" placeholder="Search">
                 <button class="button--search" type="submit">Search</button>
             </form>
-            <ul class="navbar-nav flex-row mr-lg-0">
+            <ul class="navbar-nav d-none d-md-flex d-xl-flex d-lg-flex flex-row mr-lg-0">
                 <li class="nav-item">
                     <a class="nav-link pr-2">
                         <img src="img/rss.jpg">
@@ -41,7 +41,7 @@
                 <span> </span>
             </button>
         </nav>
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -73,41 +73,45 @@
     <div class="color-right"></div>
 
     <!--top stories-->
-    <div class="swiper-container">
-        <h2>top stories</h2>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide d-flex flex-column">
-                <img src="img/Layer-44.jpg">
-                <div class="stories-class cinema">
-                    <span>
-                        Cinema
-                    </span>
+    <div class="container position-relative">
+        <div class="swiper-container">
+            <h2>top stories</h2>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide d-flex flex-column">
+                    <img src="img/Layer-44.jpg">
+                    <div class="stories-class cinema">
+                        <span>
+                            Cinema
+                        </span>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
                 </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-            </div>
-            <div class="swiper-slide d-flex flex-column">
-                <img src="img/Layer-54.jpg">
-                <div class="stories-class travel">
-                    <span>
-                        Travel
-                    </span>
+                <div class="swiper-slide d-flex flex-column">
+                    <img src="img/Layer-54.jpg">
+                    <div class="stories-class travel">
+                        <span>
+                            Travel
+                        </span>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
                 </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-            </div>
-            <div class="swiper-slide d-flex flex-column">
-                <img src="img/Layer-46.jpg">
-                <div class="stories-class television">
-                    <span>
-                        Television
-                    </span>
+                <div class="swiper-slide d-flex flex-column">
+                    <img src="img/Layer-46.jpg">
+                    <div class="stories-class television">
+                        <span>
+                            Television
+                        </span>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
                 </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-            </div>
 
+            </div>
+            <div class="slider-button-next"></div>
+            <div class="slider-button-prev"></div>
         </div>
-        <div class="slider-button-next"></div>
-        <div class="slider-button-prev"></div>
     </div>
+
+
     <div class="container d-flex">
             <!--news block-->
         <div class="news-block">
@@ -173,46 +177,130 @@
                 <div class="stories-trap">
                     <span class="block-name-text">top stories</span>
                 </div>
-                <div class="category d-flex">
+                <!--<div class="category d-flex">
                     <div>Fashion</div>
                     <div>Cinema</div>
                     <div>Television</div>
+                </div>-->
+                <nav class=" category nav nav-tabs" id="myTab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Fashion</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Cinema</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Television</a>
+                </nav>
+
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <ul>
+                            <li class="category-article d-flex">
+                                <img src="img/Layer-47.jpg">
+                                <div class="article">
+                                    <h3>
+                                        <a>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        </a>
+                                    </h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                </div>
+                            </li>
+                            <li class="category-article d-flex">
+                                <img src="img/Layer-47.jpg">
+                                <div class="article">
+                                    <h3>
+                                        <a>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        </a>
+                                    </h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                </div>
+                            </li>
+                            <li class="category-article d-flex">
+                                <img src="img/Layer-47.jpg">
+                                <div class="article">
+                                    <h3>
+                                        <a>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        </a>
+                                    </h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <ul>
+                            <li class="category-article d-flex">
+                                <img src="img/Layer-48.jpg">
+                                <div class="article">
+                                    <h3>
+                                        <a>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        </a>
+                                    </h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                </div>
+                            </li>
+                            <li class="category-article d-flex">
+                                <img src="img/Layer-48.jpg">
+                                <div class="article">
+                                    <h3>
+                                        <a>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        </a>
+                                    </h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                </div>
+                            </li>
+                            <li class="category-article d-flex">
+                                <img src="img/Layer-48.jpg">
+                                <div class="article">
+                                    <h3>
+                                        <a>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        </a>
+                                    </h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <ul>
+                            <li class="category-article d-flex">
+                                <img src="img/Layer-47.jpg">
+                                <div class="article">
+                                    <h3>
+                                        <a>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        </a>
+                                    </h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                </div>
+                            </li>
+                            <li class="category-article d-flex">
+                                <img src="img/Layer-47.jpg">
+                                <div class="article">
+                                    <h3>
+                                        <a>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        </a>
+                                    </h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                </div>
+                            </li>
+                            <li class="category-article d-flex">
+                                <img src="img/Layer-47.jpg">
+                                <div class="article">
+                                    <h3>
+                                        <a>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        </a>
+                                    </h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul>
-                    <li class="category-article d-flex">
-                        <img src="img/Layer-47.jpg">
-                        <div class="article">
-                            <h3>
-                                <a>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                                </a>
-                            </h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
-                        </div>
-                    </li>
-                    <li class="category-article d-flex">
-                        <img src="img/Layer-47.jpg">
-                        <div class="article">
-                            <h3>
-                                <a>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                                </a>
-                            </h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
-                        </div>
-                    </li>
-                    <li class="category-article d-flex">
-                        <img src="img/Layer-47.jpg">
-                        <div class="article">
-                            <h3>
-                                <a>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                                </a>
-                            </h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
-                        </div>
-                    </li>
-                </ul>
             </div>
 
             <!--also like-->

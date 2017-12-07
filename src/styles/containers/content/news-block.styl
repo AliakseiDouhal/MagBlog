@@ -7,34 +7,6 @@
   position relative
   padding-bottom 50px
 
-  &:before
-    position absolute
-    left: -72px
-    top: 0
-    content: '28'
-    background-color #f78f1d
-    width 65px
-    height 45px
-    color white
-    font-size 2.188rem
-    font-weight: bold
-    text-transform: uppercase
-    text-align: center
-
-  &:after
-    position absolute
-    left: -67px
-    top: 45px
-    content: 'feb'
-    background-color #00aedb
-    width 60px
-    height 27px
-    color white
-    font-size 1.188rem
-    font-weight: bold
-    text-transform: uppercase
-    text-align: center
-
   h2
     font-size: 2.188rem
     font-weight: bold
@@ -161,7 +133,7 @@ a.reply-link
     content ''
     left: 0
     bottom: 6px
-    width: 90%
+    width: 80%
 
 .comment
   padding-top 26px
@@ -191,3 +163,78 @@ a.reply-link
   max-width: 137px
   height: 35px
   border-radius 5px
+  &:hover
+    background-color white
+    color black
+    border: solid 3px #f78f1d
+
+@media screen  and (max-width: 1056px)
+  .img
+    & img:nth-child(2),
+    & img:nth-child(3),
+    & img:nth-child(4),
+    & img:nth-child(5)
+      max-width 24%
+
+@media screen  and (max-width: 576px)
+  .img
+    & img:nth-child(2),
+    & img:nth-child(3),
+    & img:nth-child(4),
+    & img:nth-child(5)
+      max-width 49%
+      width 100%
+
+    & img:first-child
+      object-fit cover
+
+  .comments-trap,
+  .write-comment-trap,
+  .comments-trap,
+  .related-articles-trap
+    margin-left 0
+
+  .write-comment form label
+    text-align left
+
+  .button--submit
+    max-width 100%
+
+@media screen and (min-width: 1156px)
+  .news
+    &:before
+      position absolute
+      left: -72px
+      top: 0
+      content: '28'
+      background-color #f78f1d
+      width 65px
+      height 45px
+      color white
+      font-size 2.188rem
+      font-weight: bold
+      text-transform: uppercase
+      text-align: center
+
+    &:after
+      position absolute
+      left: -67px
+      top: 45px
+      content: 'feb'
+      background-color #00aedb
+      width 60px
+      height 27px
+      color white
+      font-size 1.188rem
+      font-weight: bold
+      text-transform: uppercase
+      text-align: center
+
+
+@media screen and (max-width: 991px)
+  .news-block
+    max-width 100%
+
+  .img-news
+    max-width 652px
+    margin auto
