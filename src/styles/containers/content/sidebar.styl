@@ -30,6 +30,16 @@
     font-size 1.125rem
     padding: 5px 15px 0 15px
 
+.triangle-tabs
+  content: ""
+  position: absolute
+  bottom: -8px
+  left: calc(50% - 6.5px)
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 8px 6.5px 0 6.5px
+
 .category
   margin-top  5px
   width 100%
@@ -43,17 +53,30 @@
     text-align center
     padding-top 5px
 
-  & a:nth-child(1)
-    background-color #ec098d !important
+  & a.nav-link.rose
+    background-color #ec098d
     @extend .category-child
+    &.active:before
+      @extend .triangle-tabs
+      border-color: @background-color transparent transparent transparent
 
-  & a:nth-child(2)
-    background-color #f78f1d !important
+  & a.nav-link.orange
+    background-color #f78f1d
     @extend .category-child
+    &.active:before
+      @extend .triangle-tabs
+      border-color: @background-color transparent transparent transparent
 
-  & a:nth-child(3)
-    background-color #00aedb !important
+  & a.nav-link.blue
+    background-color #00aedb
     @extend .category-child
+    &.active:before
+      @extend .triangle-tabs
+      border-color: @background-color transparent transparent transparent
+
+  .nav-link.active
+    border none
+    color: white
 
   .nav-link
     border: none
@@ -67,20 +90,6 @@
   .nav-link
      padding: 0
 
-  .nav-link.active
-    border none
-    color: white
-
-    &:before
-      content: ""
-      position: absolute
-      bottom: -8px
-      left: calc(50% - 6.5px)
-      width: 0
-      height: 0
-      border-style: solid
-      border-width: 8px 6.5px 0 6.5px
-      border-color: black transparent transparent transparent
 
 .category-article
   min-height 100px

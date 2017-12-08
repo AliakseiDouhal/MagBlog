@@ -20,6 +20,8 @@
     color: rgb(106, 102, 102)
 
 .img-news
+  margin-top 15px
+  margin-bottom 15px
   max-width: 100%
   border: solid #bfbfbf 1px
   background: #fafafa
@@ -29,22 +31,27 @@
   display: flex
   justify-content: space-between
   flex-flow: row wrap
-  & img:first-child
+  /*& img:first-child
     padding-bottom 10px
-    max-width 100%
+    max-width 100%*/
 
 .news-footer
-  padding-top 15px
   span
     color: rgb(106, 102, 102)
     font-size 1 rem
 
+.info
+  display flex
+  flex-flow row wrap
+  & span:first-child
+    padding-right 55px
+
 .comments
-  padding-left 55px
+  padding 0 25px
   position relative
   &:before
     position absolute
-    left: 25px
+    left: 0
     top: 0
     content: ''
     background url("/img/Layer 31.png")
@@ -169,25 +176,14 @@ a.reply-link
     border: solid 3px #f78f1d
 
 @media screen  and (max-width: 1056px)
-  .img
+  /*.img
     & img:nth-child(2),
     & img:nth-child(3),
     & img:nth-child(4),
     & img:nth-child(5)
-      max-width 24%
+      max-width 24%*/
 
 @media screen  and (max-width: 576px)
-  .img
-    & img:nth-child(2),
-    & img:nth-child(3),
-    & img:nth-child(4),
-    & img:nth-child(5)
-      max-width 49%
-      width 100%
-
-    & img:first-child
-      object-fit cover
-
   .comments-trap,
   .write-comment-trap,
   .comments-trap,
@@ -237,4 +233,5 @@ a.reply-link
 
   .img-news
     max-width 652px
-    margin auto
+    margin-left auto
+    margin-right auto
