@@ -27,6 +27,7 @@
     "jquery-ui-dist": "^1.12.1",
     "jquery-ui-touch-punch": "^0.2.3",
     "pump": "^1.0.2",
+    "slick-carousel": "^1.8.1",
     "swiper": "^4.0.6"
   },
   "scripts": {
@@ -34,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AliakseiDouhal/Test_project.git"
+    "url": "git+https://github.com/AliakseiDouhal/MagBlog.git"
   },
   "author": "",
   "license": "ISC",

@@ -30,7 +30,7 @@
     });
     galleryTop[0].controller.control = galleryThumbs;
     galleryThumbs[1].controller.control = galleryTop;*/
-    var galleryTop = new Swiper('.gallery-top', {
+    /*var galleryTop = new Swiper('.gallery-top', {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -45,5 +45,21 @@
         slideToClickedSlide: true,
     });
     galleryTop.controller.control = galleryThumbs;
-    galleryThumbs.controller.control = galleryTop;
+    galleryThumbs.controller.control = galleryTop;*/
 }());
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    variableWidth: true,
+    asNavFor: '.slider-for',
+    centerMode: false,
+    focusOnSelect: true
+});
