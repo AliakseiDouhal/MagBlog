@@ -1,9 +1,10 @@
 var slider = new Swiper('.swiper-container', {
     slidesPerView: 3,
-    spaceBetween: 10,
+    spaceBetween: 27,
     breakpoints: {
         676: {
-            slidesPerView: 2
+            slidesPerView: 2,
+            spaceBetween: 10
         }
     },
     navigation: {
