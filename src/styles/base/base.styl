@@ -3,9 +3,6 @@ html
 
 body
   font-family HelveticaRegular
-  position relative
-
-body
   background-color #ebebeb
 
 a
@@ -24,11 +21,14 @@ header
   transition: background-color .4s ease-in-out, border-color .4s ease-in-out, box-shadow .4s ease-in-out, color .4s ease-in-out
   cursor pointer
 
-.container
+.main-wrapper
   max-width 1055px
   background-color white
   margin auto
-  padding 0 30px
+  padding 0 34px
+
+.content
+  width 100%
 
 .trap
   height: 36px
@@ -72,5 +72,5 @@ header
       border-color: transparent transparent #ebebeb transparent
 
 @media screen  and (max-width: 576px)
-  .container
-    padding 0 5px
+  .main-wrapper
+    padding 0 10px
