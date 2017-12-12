@@ -44,30 +44,29 @@ header
     left: 0
     opacity: 1
 
-  & span:nth-child(1),
-  & span:nth-child(2),
-  & span:nth-child(3)
-    transition: transform .35s ease-in-out, background-color .35s ease-in-out
+.icon-bar
+  transition: all 0.2s
 
-  &:not(.collapsed)
-    & span:nth-child(1)
-      position: absolute
-      left: 12px
-      top: 10px
-      transform: rotate(-135deg)
-      opacity: 0.9
+.navbar-toggler .top-bar
+  transform: rotate(45deg)
+  transform-origin: 10% 10%
 
-    & span:nth-child(2)
-      height: 12px
-      visibility: hidden
-      background-color: transparent
+.navbar-toggler .middle-bar
+  opacity: 0
 
-    & span:nth-child(3)
-      position: absolute
-      left: 12px
-      top: 10px
-      transform: rotate(135deg)
-      opacity: 0.9
+.navbar-toggler .bottom-bar
+  transform: rotate(-45deg)
+  transform-origin: 10% 90%
+
+.navbar-toggler
+  &.collapsed .top-bar
+    transform: rotate(0)
+
+  &.collapsed .middle-bar
+    opacity: 1
+
+  &.collapsed .bottom-bar
+    transform: rotate(0)
 
 .navbar-collapse .nav-item
   height 36px
@@ -138,3 +137,11 @@ header
   .navbar-light .navbar-nav .nav-link
     text-align center
 
+  .navbar-light
+    margin-left -34px
+    margin-right -34px
+
+@media screen and (max-width: 576px)
+  .navbar-light
+    margin-left -10px
+    margin-right -10px

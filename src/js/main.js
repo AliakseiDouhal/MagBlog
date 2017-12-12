@@ -5,6 +5,9 @@ var slider = new Swiper('.swiper-container', {
         676: {
             slidesPerView: 2,
             spaceBetween: 10
+        },
+        340: {
+            slidesPerView: 1
         }
     },
     navigation: {
@@ -17,14 +20,30 @@ $('.slider-for').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    adaptiveHeight: true,
     asNavFor: '.slider-nav'
 });
 $('.slider-nav').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
+    infinite: false,
     variableWidth: false,
     asNavFor: '.slider-for',
     centerMode: false,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+        {
+            breakpoint: 710,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 522,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
 });
