@@ -14,6 +14,7 @@ var gulp = require('gulp'),
     pump = require('pump'),
     cleanCSS = require('gulp-clean-css'),
     browserSync = require('browser-sync'),
+    htmlmin = require('gulp-htmlmin'),
     server = lr();
 var paths = {
     html : [
@@ -52,6 +53,7 @@ var paths = {
 // Options compress
 gulp.task('copy', function() {
     return gulp.src(paths.html)
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('build/'))
 });
 
